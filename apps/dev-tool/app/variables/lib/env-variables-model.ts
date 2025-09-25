@@ -596,7 +596,7 @@ export const envVariables: EnvVariableModel[] = [
     name: 'STRIPE_SECRET_KEY',
     description: 'Your Stripe secret key.',
     category: 'Billing',
-    hint: `Ex. sk_test_123456789012345678901234`,
+    hint: `Ex. sk_test_xxxxxxxxxxxxxxxxxxxxxxxx`,
     secret: true,
     type: 'string',
     contextualValidation: {
