@@ -23,11 +23,17 @@ const INTERNAL_PACKAGES = [
   '@kit/notifications',
 ];
 
+const AI_SDK_PACKAGES = [
+  'ai',
+  '@ai-sdk/react',
+  '@ai-sdk/openai',
+];
+
 /** @type {import('next').NextConfig} */
 const config = {
   reactStrictMode: true,
   /** Enables hot reloading for local packages without a build step */
-  transpilePackages: INTERNAL_PACKAGES,
+  transpilePackages: [...INTERNAL_PACKAGES, ...AI_SDK_PACKAGES],
   images: {
     remotePatterns: getRemotePatterns(),
   },
@@ -64,6 +70,7 @@ const config = {
       '@radix-ui/react-select',
       'date-fns',
       ...INTERNAL_PACKAGES,
+      ...AI_SDK_PACKAGES,
     ],
   },
   modularizeImports: {

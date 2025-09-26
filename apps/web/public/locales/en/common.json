@@ -58,6 +58,7 @@
   "back": "Back",
   "routes": {
     "home": "Home",
+    "createEpisode": "Create Episode",
     "account": "Account",
     "members": "Members",
     "billing": "Billing",
